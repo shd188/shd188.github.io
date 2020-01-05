@@ -4,13 +4,22 @@
   <title><![CDATA[沈同学说]]></title>
   <link href="shenhaidi.cn/atom.xml" rel="self"/>
   <link href="shenhaidi.cn/"/>
+<<<<<<< HEAD
   <updated>2020-01-05T14:09:15+08:00</updated>
+=======
+  <updated>2020-01-05T13:49:38+08:00</updated>
+>>>>>>> 9b6180208d22c336a8f9b798240042cfbde5af97
   <id>shenhaidi.cn/</id>
   <author>
     <name><![CDATA[]]></name>
     
   </author>
+<<<<<<< HEAD
   <generator uri="http://www.mweb.im/">MWeb</generator>
+=======
+  <generator uri="http://www.mweb.im">MWeb</generator>
+
+>>>>>>> 9b6180208d22c336a8f9b798240042cfbde5af97
   
   <entry>
     <title type="html"><![CDATA[哈哈]]></title>

@@ -3,6 +3,7 @@
 	background-color: rgba(255,255,255,0.2);
 }
 
+<<<<<<< HEAD
 
 .top-bar,.tab-bar{ background-color: #fff; height: 65px;  border-bottom: solid 1px #F5F5F5;}
 
@@ -193,14 +194,76 @@ padding: 8px 0px; margin: 0;
 .home-categories{max-width: 640px;}
 
 .markdown-body{ margin-top: 34px;}
+=======
+ul.off-canvas-list li label{background-color: #09263c;}
+.left-off-canvas-menu{ background-color: #112E45;}
+ul.off-canvas-list li a{ border-bottom:solid 1px #0e385a;}
+ul.off-canvas-list li a:hover{background: #335a79;}
+.top-bar,.tab-bar{ background-color: #112E45; height: 50px;}
+
+.tab-bar .menu-icon{ width: 100%;}
+.row{ max-width: 1100px;}
+
+.docs-bar #header{padding: 0px 0.93em;  max-width: 1100px; margin: 0 auto;}
+.docs-bar #header h1{ font-family: Lato,Helvetica Neue,Helvetica,Arial,sans-serif; text-align: left;  padding: 6px 0; font-size: 20px; color: #cdddeb;}
+#header h1 a{ text-decoration: none;color: #cdddeb;}
+.sidebar {
+    padding: 0px 0px; padding-right: 8%;
+}
+.sidebar .side-nav li {
+    margin: 0;
+    padding: 0;
+}
+.sidebar .side-nav a{ font-family: Lato,Helvetica Neue,Helvetica,Arial,sans-serif;}
+.sidebar .side-nav li a{ padding: 4px 4px;}
+.sidebar .side-nav li.side-title span{ display: inline-block; padding: 10px 0; margin-top: 40px; color:#0e83cd; border-top: solid 1px #e3e3e3; font-weight: bold; font-size: 1.2em;}
+
+
+.sidebar .side-nav li a{  color: #444;}
+.sidebar .side-nav li a:hover{color: #0e83cd; background:none;}
+.sidebar .side-nav li.active > a:first-child {
+    color: #0e83cd;
+}
+
+.markdown-toc ul,.markdown-toc li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.share-comments{ padding: 15px 0px;}
+.page-bottom{ margin-top: 40px;}
+.page-bottom hr{ border-color: #eee;}
+.page-bottom .row{ padding-bottom: 20px;}
+.page-bottom .copyright{ font-size: 12px; padding: 0; margin: 0;}
+.page-bottom .copyright,.page-bottom .copyright a{ color: #666;}
+
+.markdown-toc a{ font-family: Lato,Helvetica Neue,Helvetica,Arial,sans-serif;}
+.markdown-toc li a{ padding: 4px 0px; color: #666; font-size: 0.9em;}
+.markdown-toc li.side-title{ padding-bottom: 6px;}
+.markdown-toc li.side-title span{ padding: 10px 0;  color:#0e83cd;  font-size: 1.0em;border-top: solid 1px #e3e3e3; }
+
+.markdown-toc ul ul{padding-left: 16px;}
+.markdown-toc li a:hover{color: #0e83cd; background:none;}
+
+
+.markdown-body{ margin-top: 54px;}
+
+.markdown-toc{ position: absolute; display: none; right: 80px; top: 130px; }
+
+>>>>>>> 9b6180208d22c336a8f9b798240042cfbde5af97
 .markdown-body {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   color: #333;
   overflow: hidden;
+<<<<<<< HEAD
   font-family: "SF UI Display", ".PingFang SC","PingFang SC", "Neue Haas Grotesk Text Pro", "Arial Nova", "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", "Helvetica Neue", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "Hiragino Sans GB", sans-serif;
 
 
+=======
+  font-family: Lato,Helvetica Neue,Helvetica,Arial,sans-serif;
+>>>>>>> 9b6180208d22c336a8f9b798240042cfbde5af97
   font-size: 16px;
   line-height: 1.6;
   word-wrap: break-word;
@@ -220,8 +283,13 @@ padding: 8px 0px; margin: 0;
 }
 
 .markdown-body h1 {
+<<<<<<< HEAD
   font-size: 2rem;
   margin: 0.67rem 0;
+=======
+  font-size: 2em;
+  margin: 0.67em 0;
+>>>>>>> 9b6180208d22c336a8f9b798240042cfbde5af97
 }
 
 .markdown-body img {
@@ -242,7 +310,11 @@ padding: 8px 0px; margin: 0;
 .markdown-body kbd,
 .markdown-body pre {
   font-family: monospace, monospace;
+<<<<<<< HEAD
   font-size: 1rem;
+=======
+  font-size: 1em;
+>>>>>>> 9b6180208d22c336a8f9b798240042cfbde5af97
 }
 
 .markdown-body input {
@@ -281,7 +353,11 @@ padding: 8px 0px; margin: 0;
 }
 
 .markdown-body input {
+<<<<<<< HEAD
   font: 13px/1.4 Helvetica, arial, freesans, clean, sans-serif, "Segoe UI remoji", "Segoe UI Symbol";
+=======
+  font: 13px/1.4 Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+>>>>>>> 9b6180208d22c336a8f9b798240042cfbde5af97
 }
 
 .markdown-body a {
@@ -324,7 +400,10 @@ padding: 8px 0px; margin: 0;
   margin-top: 15px;
   margin-bottom: 15px;
   line-height: 1.1;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9b6180208d22c336a8f9b798240042cfbde5af97
 }
 
 .markdown-body h1 {
@@ -432,12 +511,19 @@ padding: 8px 0px; margin: 0;
 .markdown-body h5,
 .markdown-body h6 {
   position: relative;
+<<<<<<< HEAD
   margin-top: 1rem;
   margin-bottom: 16px;
   font-weight: bold;
     /* chinese */
 font-family: "PT Sans", "SF UI Display", ".PingFang SC","PingFang SC", "Neue Haas Grotesk Text Pro", "Arial Nova", "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", "Helvetica Neue", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "Hiragino Sans GB", sans-serif;
 
+=======
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+>>>>>>> 9b6180208d22c336a8f9b798240042cfbde5af97
 }
 
 .markdown-body h1 .octicon-link,
@@ -457,7 +543,11 @@ font-family: "PT Sans", "SF UI Display", ".PingFang SC","PingFang SC", "Neue Haa
 .markdown-body h4:hover .anchor,
 .markdown-body h5:hover .anchor,
 .markdown-body h6:hover .anchor {
+<<<<<<< HEAD
   height: 1rem;
+=======
+  height: 1em;
+>>>>>>> 9b6180208d22c336a8f9b798240042cfbde5af97
   padding-left: 8px;
   margin-left: -30px;
   line-height: 1;
@@ -474,25 +564,40 @@ font-family: "PT Sans", "SF UI Display", ".PingFang SC","PingFang SC", "Neue Haa
 }
 
 .markdown-body h1 {
+<<<<<<< HEAD
   padding-bottom: 0.3rem;
   font-size: 2.25rem;
+=======
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+>>>>>>> 9b6180208d22c336a8f9b798240042cfbde5af97
   line-height: 1.2;
   border-bottom: 1px solid #eee;
 }
 
 .markdown-body h2 {
+<<<<<<< HEAD
   padding-bottom: 0.3rem;
   font-size: 1.75rem;
+=======
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+>>>>>>> 9b6180208d22c336a8f9b798240042cfbde5af97
   line-height: 1.225;
   border-bottom: 1px solid #eee;
 }
 
 .markdown-body h3 {
+<<<<<<< HEAD
   font-size: 1.5rem;
+=======
+  font-size: 1.5em;
+>>>>>>> 9b6180208d22c336a8f9b798240042cfbde5af97
   line-height: 1.43;
 }
 
 .markdown-body h4 {
+<<<<<<< HEAD
   font-size: 1.25rem;
 }
 
@@ -502,6 +607,17 @@ font-family: "PT Sans", "SF UI Display", ".PingFang SC","PingFang SC", "Neue Haa
 
 .markdown-body h6 {
   font-size: 1rem;
+=======
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+>>>>>>> 9b6180208d22c336a8f9b798240042cfbde5af97
   color: #777;
 }
 
@@ -514,7 +630,10 @@ font-family: "PT Sans", "SF UI Display", ".PingFang SC","PingFang SC", "Neue Haa
 .markdown-body pre {
   margin-top: 0;
   margin-bottom: 16px;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9b6180208d22c336a8f9b798240042cfbde5af97
 }
 
 .markdown-body hr {
@@ -527,8 +646,12 @@ font-family: "PT Sans", "SF UI Display", ".PingFang SC","PingFang SC", "Neue Haa
 
 .markdown-body ul,
 .markdown-body ol {
+<<<<<<< HEAD
   padding-left: 2rem;
   margin-left: 0;
+=======
+  padding-left: 2em;
+>>>>>>> 9b6180208d22c336a8f9b798240042cfbde5af97
 }
 
 .markdown-body ul ul,
@@ -550,6 +673,10 @@ font-family: "PT Sans", "SF UI Display", ".PingFang SC","PingFang SC", "Neue Haa
 .markdown-body dl dt {
   padding: 0;
   margin-top: 16px;
+<<<<<<< HEAD
+=======
+  font-size: 1em;
+>>>>>>> 9b6180208d22c336a8f9b798240042cfbde5af97
   font-style: italic;
   font-weight: bold;
 }
@@ -608,8 +735,13 @@ font-family: "PT Sans", "SF UI Display", ".PingFang SC","PingFang SC", "Neue Haa
 
 .markdown-body code {
   padding: 0;
+<<<<<<< HEAD
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
+=======
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+>>>>>>> 9b6180208d22c336a8f9b798240042cfbde5af97
   margin: 0;
   font-size: 85%;
   background-color: rgba(0,0,0,0.04);
@@ -618,7 +750,11 @@ font-family: "PT Sans", "SF UI Display", ".PingFang SC","PingFang SC", "Neue Haa
 
 .markdown-body code:before,
 .markdown-body code:after {
+<<<<<<< HEAD
   letter-spacing: -0.2rem;
+=======
+  letter-spacing: -0.2em;
+>>>>>>> 9b6180208d22c336a8f9b798240042cfbde5af97
   content: "\00a0";
 }
 
@@ -700,6 +836,7 @@ font-family: "PT Sans", "SF UI Display", ".PingFang SC","PingFang SC", "Neue Haa
 
 .markdown-body .task-list-item input {
   float: left;
+<<<<<<< HEAD
   margin: 0.3rem 0 0.25rem -1.6rem;
   vertical-align: middle;
 }
@@ -783,3 +920,8 @@ font-family: "PT Sans", "SF UI Display", ".PingFang SC","PingFang SC", "Neue Haa
     box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.5); }
   .markdown-body ul.clearing-thumbs a.radius {
     border-radius: 3px; }
+=======
+  margin: 0.3em 0 0.25em -1.6em;
+  vertical-align: middle;
+}
+>>>>>>> 9b6180208d22c336a8f9b798240042cfbde5af97
