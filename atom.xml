@@ -4,7 +4,7 @@
   <title><![CDATA[沈同学说]]></title>
   <link href="shenhaidi.cn/atom.xml" rel="self"/>
   <link href="shenhaidi.cn/"/>
-  <updated>2020-01-05T14:49:24+08:00</updated>
+  <updated>2020-01-05T23:08:26+08:00</updated>
   <id>shenhaidi.cn/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -13,10 +13,52 @@
   <generator uri="http://www.mweb.im/">MWeb</generator>
   
   <entry>
+    <title type="html"><![CDATA[《半小时漫画中国史1、2、3》]]></title>
+    <link href="shenhaidi.cn/half-hour-history-shd-blog.html"/>
+    <updated>2020-01-05T22:41:02+08:00</updated>
+    <id>shenhaidi.cn/half-hour-history-shd-blog.html</id>
+    <content type="html"><![CDATA[
+<p>三部都用诙谐幽默的漫画风，简单扼要的讲述了中国从东周到大唐的历史。对于我这种历史小白来说像看八卦似的就看完了，虽然历史时间线还是一团浆糊，但是里面有很多小故事和成语的来源很有意思便记了下来。</p>
+
+<h4 id="toc_0">白马之盟</h4>
+
+<p>刘邦称帝后，以杀白马方式立定盟约，与群臣定下白马之盟，“非刘不王”的誓约。</p>
+
+<h4 id="toc_1">西安“下马陵”的来源</h4>
+
+<p>有个考生叫董仲舒，汉武帝很喜欢他，路过他坟前都要下马徒步，这便是西安的“下马陵”。</p>
+
+<h4 id="toc_2">黄巾起义</h4>
+
+<p>脑袋上绑着黄布，自称“黄巾军”，是中国历史上规模最大的一次农民起义。</p>
+
+<h4 id="toc_3">不入虎穴，焉得虎子</h4>
+
+<p>班超到鄯善<sup id="fnref1"><a href="#fn1" rel="footnote">1</a></sup>（前楼兰）出使，带着小弟冲到驿所放火红烧匈奴使节，鄯善直接吓坏了，瞬间倒向大汉。</p>
+
+<h4 id="toc_4">“一个人若不能流芳百世，那就应该遗臭万年。”</h4>
+
+<p>出自晋朝时期的桓温。东晋政治家、军事家、权臣，战功累累但野心不小。</p>
+
+<div class="footnotes">
+<hr/>
+<ol>
+
+<li id="fn1">
+<p>鄯善国,是西域古国之一,国都扜泥城(今新疆若羌附近)。&nbsp;<a href="#fnref1" rev="footnote">&#8617;</a></p>
+</li>
+
+</ol>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[分享一首小诗]]></title>
-    <link href="shenhaidi.cn/poem.html"/>
+    <link href="shenhaidi.cn/poem-shd-blog.html"/>
     <updated>2020-01-05T13:38:23+08:00</updated>
-    <id>shenhaidi.cn/poem.html</id>
+    <id>shenhaidi.cn/poem-shd-blog.html</id>
     <content type="html"><![CDATA[
 <p>在网上看到了一首小诗，质朴又温情。是《独立时代》杂志征文大赛一等奖作品《你还在我身旁》。</p>
 
