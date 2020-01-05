@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[沈同学说]]></title>
+  <title><![CDATA[沈同学的Blog]]></title>
   <link href="shenhaidi.cn/atom.xml" rel="self"/>
   <link href="shenhaidi.cn/"/>
-  <updated>2020-01-05T23:08:26+08:00</updated>
+  <updated>2020-01-05T23:42:58+08:00</updated>
   <id>shenhaidi.cn/</id>
   <author>
     <name><![CDATA[]]></name>
