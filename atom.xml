@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[沈同学说]]></title>
-  <link href="shentongxue.com/atom.xml" rel="self"/>
-  <link href="shentongxue.com/"/>
-  <updated>2020-01-05T13:39:56+08:00</updated>
-  <id>shentongxue.com/</id>
+  <link href="shenhaidi.cn/atom.xml" rel="self"/>
+  <link href="shenhaidi.cn/"/>
+  <updated>2020-01-05T13:49:38+08:00</updated>
+  <id>shenhaidi.cn/</id>
   <author>
     <name><![CDATA[]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[哈哈]]></title>
-    <link href="shentongxue.com/15782027033389.html"/>
+    <link href="shenhaidi.cn/15782027033389.html"/>
     <updated>2020-01-05T13:38:23+08:00</updated>
-    <id>shentongxue.com/15782027033389.html</id>
+    <id>shenhaidi.cn/15782027033389.html</id>
     <content type="html"><![CDATA[
 <p>test</p>
 
