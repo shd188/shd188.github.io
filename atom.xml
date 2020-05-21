@@ -4,13 +4,60 @@
   <title><![CDATA[沈同学的Blog]]></title>
   <link href="shenhaidi.cn/atom.xml" rel="self"/>
   <link href="shenhaidi.cn/"/>
-  <updated>2020-05-21T20:08:01+08:00</updated>
+  <updated>2020-05-21T20:27:23+08:00</updated>
   <id>shenhaidi.cn/</id>
   <author>
     <name><![CDATA[]]></name>
     
   </author>
   <generator uri="http://www.mweb.im/">MWeb</generator>
+  
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="shenhaidi.cn/15900639856673.html"/>
+    <updated>2020-05-21T20:26:25+08:00</updated>
+    <id>shenhaidi.cn/15900639856673.html</id>
+    <content type="html"><![CDATA[
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[App新手引导]]></title>
+    <link href="shenhaidi.cn/app_guide.html"/>
+    <updated>2020-05-19T12:09:33+08:00</updated>
+    <id>shenhaidi.cn/app_guide.html</id>
+    <content type="html"><![CDATA[
+<h3 id="toc_0">前置引导</h3>
+
+<p>1.启动页引导<br/>
+2.视频/动画引导</p>
+
+<h3 id="toc_1">过程中引导</h3>
+
+<h4 id="toc_2">蒙层引导</h4>
+
+<ol>
+<li>单页蒙层
+<img src="media/15898613732111/15898618564577.jpg" alt=""/></li>
+<li>分步引导
+<img src="media/15898613732111/15898619275220.jpg" alt=""/></li>
+</ol>
+
+<p><img src="media/15898613732111/15898619029710.jpg" alt=""/><br/>
+3. 气泡引导</p>
+
+<p><img src="media/15898613732111/15898619761030.jpg" alt=""/><br/>
+4. 空状态引导<br/>
+一般用于空页面需要用户操作，比如发表文章<br/>
+5. 教学式引导<br/>
+一般用于游戏、工具类应用，一步一步的。<br/>
+6. 互动式引导/预加载任务<br/>
+常用于工具类产品，提取预知用户下一步动作并提示<br/>
+8. 卡片/弹框是引导</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[《半小时漫画中国史1、2、3》]]></title>
