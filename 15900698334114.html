@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
     
-  App新手引导 - 沈同学的Blog
+  Python数据处理（一） - 沈同学的Blog
   
   </title>
   
@@ -103,10 +103,10 @@
       <div class="markdown-body article-wrap">
        <div class="article">
           
-          <h1>App新手引导</h1>
+          <h1>Python数据处理（一）</h1>
      
         <div class="read-more clearfix">
-          <span class="date">2020/5/19</span>
+          <span class="date">2020/5/21</span>
 
           <span>posted in&nbsp;</span> 
           
@@ -123,33 +123,71 @@
       </div><!-- article -->
 
       <div class="article-content">
-      <h3 id="toc_0">前置引导</h3>
+      <p>本节说下用python的pandas对excel数据的基础查询方法。</p>
 
-<p>1.启动页引导<br/>
-2.视频/动画引导</p>
+<h4 id="toc_0">读取数据表</h4>
 
-<h3 id="toc_1">过程中引导</h3>
+<pre><code>import pandas as pd
+df = pd.reed_csv(&#39;/xxx.csv&#39;)
+</code></pre>
 
-<h4 id="toc_2">蒙层引导</h4>
+<h4 id="toc_1">查看列名</h4>
 
-<ol>
-<li>单页蒙层
-<img src="media/15898613732111/15898618564577.jpg" alt=""/></li>
-<li>分步引导
-<img src="media/15898613732111/15898619275220.jpg" alt=""/></li>
-</ol>
+<pre><code>df.columns
+</code></pre>
 
-<p><img src="media/15898613732111/15898619029710.jpg" alt=""/><br/>
-3. 气泡引导</p>
+<h4 id="toc_2">查看行数、列数</h4>
 
-<p><img src="media/15898613732111/15898619761030.jpg" alt=""/><br/>
-4. 空状态引导<br/>
-一般用于空页面需要用户操作，比如发表文章<br/>
-5. 教学式引导<br/>
-一般用于游戏、工具类应用，一步一步的。<br/>
-6. 互动式引导/预加载任务<br/>
-常用于工具类产品，提取预知用户下一步动作并提示<br/>
-8. 卡片/弹框是引导</p>
+<pre><code>df.shape
+</code></pre>
+
+<h4 id="toc_3">查看前5行/后5行</h4>
+
+<pre><code>df.head(5)
+df.tail(5)
+</code></pre>
+
+<h4 id="toc_4">查看每列的数据格式</h4>
+
+<pre><code>df.dtypes
+</code></pre>
+
+<h4 id="toc_5">行/列的索引</h4>
+
+<pre><code>#行的索引,读取第一行
+df.loc[0,:]
+
+#列的索引
+df[id]
+df.loc[:,&#39;id&#39;]
+
+#某行某列,id列的第三个
+df.loc[2,&#39;id&#39;] 
+</code></pre>
+
+<h4 id="toc_6">数据描述</h4>
+
+<p>包含了每一列的个数、均值、方差、最小值、最大值、分位数。</p>
+
+<pre><code>df.describe()
+#如果查看某一列的，可以加上列的
+df[&#39;id&#39;].describe()
+</code></pre>
+
+<h4 id="toc_7">数据信息</h4>
+
+<p>包含了每列的个数、有无空值、数据格式、内存大小</p>
+
+<pre><code>df.info()
+</code></pre>
+
+<h4 id="toc_8">切片获取数据</h4>
+
+<p>如果想获取某一块区域</p>
+
+<pre><code>#前闭后开，取得是第3行到第7行，第2列到第3列的数据
+df.iloc[2:8,1:4]
+</code></pre>
 
 
     
@@ -160,16 +198,16 @@
         <div class="large-6 columns">
         <p class="text-left" style="padding:15px 0px;">
       
-          <a href="15900698334114.html" 
-          title="Previous Post: Python数据处理（一）">&laquo; Python数据处理（一）</a>
+          <a href="15901302104257.html" 
+          title="Previous Post: Python数据处理（二）">&laquo; Python数据处理（二）</a>
       
         </p>
         </div>
         <div class="large-6 columns">
       <p class="text-right" style="padding:15px 0px;">
       
-          <a  href="half-hour-history-shd-blog.html" 
-          title="Next Post: 《半小时漫画中国史1、2、3》">《半小时漫画中国史1、2、3》 &raquo;</a>
+          <a  href="app_guide.html" 
+          title="Next Post: App新手引导">App新手引导 &raquo;</a>
       
       </p>
         </div>

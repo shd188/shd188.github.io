@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
     
-  App新手引导 - 沈同学的Blog
+  Python数据处理（二） - 沈同学的Blog
   
   </title>
   
@@ -103,10 +103,10 @@
       <div class="markdown-body article-wrap">
        <div class="article">
           
-          <h1>App新手引导</h1>
+          <h1>Python数据处理（二）</h1>
      
         <div class="read-more clearfix">
-          <span class="date">2020/5/19</span>
+          <span class="date">2020/5/22</span>
 
           <span>posted in&nbsp;</span> 
           
@@ -123,33 +123,61 @@
       </div><!-- article -->
 
       <div class="article-content">
-      <h3 id="toc_0">前置引导</h3>
+      <p>本节说明对数据进行清洗的方法。</p>
 
-<p>1.启动页引导<br/>
-2.视频/动画引导</p>
+<h4 id="toc_0">修改格式</h4>
 
-<h3 id="toc_1">过程中引导</h3>
+<h5 id="toc_1">字符串格式转换为日期格式</h5>
 
-<h4 id="toc_2">蒙层引导</h4>
+<p>这里需要导入datetime库</p>
 
-<ol>
-<li>单页蒙层
-<img src="media/15898613732111/15898618564577.jpg" alt=""/></li>
-<li>分步引导
-<img src="media/15898613732111/15898619275220.jpg" alt=""/></li>
-</ol>
+<pre><code>import datetime
+import pandas as pd
 
-<p><img src="media/15898613732111/15898619029710.jpg" alt=""/><br/>
-3. 气泡引导</p>
+df = pd.read_csv(&#39;/xxx.csv&#39;)
+#查看created_at这个列的格式
+print(type(df.created_at[0]))
+df[:&#39;created&#39;] = df[&#39;created_at&#39;].apply(lambda x:datetime.datetime.strptime(x,&#39;%Y/%m%d %H:%M:%s&#39;))
+</code></pre>
 
-<p><img src="media/15898613732111/15898619761030.jpg" alt=""/><br/>
-4. 空状态引导<br/>
-一般用于空页面需要用户操作，比如发表文章<br/>
-5. 教学式引导<br/>
-一般用于游戏、工具类应用，一步一步的。<br/>
-6. 互动式引导/预加载任务<br/>
-常用于工具类产品，提取预知用户下一步动作并提示<br/>
-8. 卡片/弹框是引导</p>
+<h4 id="toc_2">清除空格</h4>
+
+<p>有时候导出的数据，某一列有的会有一些空格，对于统计会造成困扰</p>
+
+<pre><code>#方法1:
+df.loc[:,&#39;user_mobile无空格&#39;] = df[&#39;user_mobile&#39;].str.replace(&#39; &#39;,&#39;&#39;)
+
+#方法2，去除前后空格:
+df.loc[:,&#39;user_mobile无空格&#39;] = df[&#39;user_mobile&#39;].str.strip(&#39; &#39;)
+</code></pre>
+
+<h4 id="toc_3">分列</h4>
+
+<p>这是excel比较常用的功能，比如日期和时间分开‘2020-02-02 13:20:22’</p>
+
+<pre><code>df.loc[:,&#39;created日期&#39;] = df[&#39;created&#39;].str.split(&#39; &#39;).str[0]
+df.loc[:,&#39;created时间&#39;] = df[&#39;created&#39;].str.split(&#39; &#39;).str[1]
+</code></pre>
+
+<h4 id="toc_4">合并</h4>
+
+<p>用于俩个sheet通过某个列进行数据合并,假设一个表data是产品id和产品名；另一个表price是产品id和价格</p>
+
+<p>pd.merge(left=df1,right=df2,left_on=&#39;key1&#39;,right_on=&#39;key2&#39;,how=&#39;left&#39;)<br/>
+left：左表；right：右表；left_on：左表的连接键；right_on：右表的连接键；how是连接方式：left，right，outer，inner（默认）</p>
+
+<pre><code>df = pd.merge(left=data,right=price,on=&#39;product_id&#39;)
+</code></pre>
+
+<p>当想把一张表合并到另一张表最后时：</p>
+
+<pre><code>df = pd.concat([df1,df2])
+</code></pre>
+
+<p>如果想横向合并，把另一张表放到另一张表右边,按索引取交集</p>
+
+<pre><code>df = pd.concat([df1,df2],axis=1,join=&#39;inner&#39;)
+</code></pre>
 
 
     
@@ -160,16 +188,13 @@
         <div class="large-6 columns">
         <p class="text-left" style="padding:15px 0px;">
       
-          <a href="15900698334114.html" 
-          title="Previous Post: Python数据处理（一）">&laquo; Python数据处理（一）</a>
-      
         </p>
         </div>
         <div class="large-6 columns">
       <p class="text-right" style="padding:15px 0px;">
       
-          <a  href="half-hour-history-shd-blog.html" 
-          title="Next Post: 《半小时漫画中国史1、2、3》">《半小时漫画中国史1、2、3》 &raquo;</a>
+          <a  href="15900698334114.html" 
+          title="Next Post: Python数据处理（一）">Python数据处理（一） &raquo;</a>
       
       </p>
         </div>

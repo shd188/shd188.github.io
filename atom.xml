@@ -4,13 +4,153 @@
   <title><![CDATA[沈同学的Blog]]></title>
   <link href="shenhaidi.cn/atom.xml" rel="self"/>
   <link href="shenhaidi.cn/"/>
-  <updated>2020-05-21T20:27:56+08:00</updated>
+  <updated>2020-05-22T15:24:27+08:00</updated>
   <id>shenhaidi.cn/</id>
   <author>
     <name><![CDATA[]]></name>
     
   </author>
   <generator uri="http://www.mweb.im/">MWeb</generator>
+  
+  <entry>
+    <title type="html"><![CDATA[Python数据处理（二）]]></title>
+    <link href="shenhaidi.cn/15901302104257.html"/>
+    <updated>2020-05-22T14:50:10+08:00</updated>
+    <id>shenhaidi.cn/15901302104257.html</id>
+    <content type="html"><![CDATA[
+<p>本节说明对数据进行清洗的方法。</p>
+
+<h4 id="toc_0">修改格式</h4>
+
+<h5 id="toc_1">字符串格式转换为日期格式</h5>
+
+<p>这里需要导入datetime库</p>
+
+<pre><code>import datetime
+import pandas as pd
+
+df = pd.read_csv(&#39;/xxx.csv&#39;)
+#查看created_at这个列的格式
+print(type(df.created_at[0]))
+df[:&#39;created&#39;] = df[&#39;created_at&#39;].apply(lambda x:datetime.datetime.strptime(x,&#39;%Y/%m%d %H:%M:%s&#39;))
+</code></pre>
+
+<h4 id="toc_2">清除空格</h4>
+
+<p>有时候导出的数据，某一列有的会有一些空格，对于统计会造成困扰</p>
+
+<pre><code>#方法1:
+df.loc[:,&#39;user_mobile无空格&#39;] = df[&#39;user_mobile&#39;].str.replace(&#39; &#39;,&#39;&#39;)
+
+#方法2，去除前后空格:
+df.loc[:,&#39;user_mobile无空格&#39;] = df[&#39;user_mobile&#39;].str.strip(&#39; &#39;)
+</code></pre>
+
+<h4 id="toc_3">分列</h4>
+
+<p>这是excel比较常用的功能，比如日期和时间分开‘2020-02-02 13:20:22’</p>
+
+<pre><code>df.loc[:,&#39;created日期&#39;] = df[&#39;created&#39;].str.split(&#39; &#39;).str[0]
+df.loc[:,&#39;created时间&#39;] = df[&#39;created&#39;].str.split(&#39; &#39;).str[1]
+</code></pre>
+
+<h4 id="toc_4">合并</h4>
+
+<p>用于俩个sheet通过某个列进行数据合并,假设一个表data是产品id和产品名；另一个表price是产品id和价格</p>
+
+<p>pd.merge(left=df1,right=df2,left_on=&#39;key1&#39;,right_on=&#39;key2&#39;,how=&#39;left&#39;)<br/>
+left：左表；right：右表；left_on：左表的连接键；right_on：右表的连接键；how是连接方式：left，right，outer，inner（默认）</p>
+
+<pre><code>df = pd.merge(left=data,right=price,on=&#39;product_id&#39;)
+</code></pre>
+
+<p>当想把一张表合并到另一张表最后时：</p>
+
+<pre><code>df = pd.concat([df1,df2])
+</code></pre>
+
+<p>如果想横向合并，把另一张表放到另一张表右边,按索引取交集</p>
+
+<pre><code>df = pd.concat([df1,df2],axis=1,join=&#39;inner&#39;)
+</code></pre>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Python数据处理（一）]]></title>
+    <link href="shenhaidi.cn/15900698334114.html"/>
+    <updated>2020-05-21T22:03:53+08:00</updated>
+    <id>shenhaidi.cn/15900698334114.html</id>
+    <content type="html"><![CDATA[
+<p>本节说下用python的pandas对excel数据的基础查询方法。</p>
+
+<h4 id="toc_0">读取数据表</h4>
+
+<pre><code>import pandas as pd
+df = pd.reed_csv(&#39;/xxx.csv&#39;)
+</code></pre>
+
+<h4 id="toc_1">查看列名</h4>
+
+<pre><code>df.columns
+</code></pre>
+
+<h4 id="toc_2">查看行数、列数</h4>
+
+<pre><code>df.shape
+</code></pre>
+
+<h4 id="toc_3">查看前5行/后5行</h4>
+
+<pre><code>df.head(5)
+df.tail(5)
+</code></pre>
+
+<h4 id="toc_4">查看每列的数据格式</h4>
+
+<pre><code>df.dtypes
+</code></pre>
+
+<h4 id="toc_5">行/列的索引</h4>
+
+<pre><code>#行的索引,读取第一行
+df.loc[0,:]
+
+#列的索引
+df[id]
+df.loc[:,&#39;id&#39;]
+
+#某行某列,id列的第三个
+df.loc[2,&#39;id&#39;] 
+</code></pre>
+
+<h4 id="toc_6">数据描述</h4>
+
+<p>包含了每一列的个数、均值、方差、最小值、最大值、分位数。</p>
+
+<pre><code>df.describe()
+#如果查看某一列的，可以加上列的
+df[&#39;id&#39;].describe()
+</code></pre>
+
+<h4 id="toc_7">数据信息</h4>
+
+<p>包含了每列的个数、有无空值、数据格式、内存大小</p>
+
+<pre><code>df.info()
+</code></pre>
+
+<h4 id="toc_8">切片获取数据</h4>
+
+<p>如果想获取某一块区域</p>
+
+<pre><code>#前闭后开，取得是第3行到第7行，第2列到第3列的数据
+df.iloc[2:8,1:4]
+</code></pre>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[App新手引导]]></title>
