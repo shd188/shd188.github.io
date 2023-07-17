@@ -1,284 +1,165 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html lang="zh-cn">
   <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1" />
     <title>
-  
-  
-  
-  </title>
-  
-  
-  <link href="atom.xml" rel="alternate" title="" type="application/atom+xml">
-    <link rel="stylesheet" href="asset/css/foundation.min.css" />
-    <link rel="stylesheet" href="asset/css/docs.css" />
-    <script src="asset/js/vendor/modernizr.js"></script>
-    <script src="asset/js/vendor/jquery.js"></script>
-  <script src="asset/highlightjs/highlight.pack.js"></script>
-  <link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <script>hljs.initHighlightingOnLoad();</script>
-<script type="text/javascript">
-  function before_search(){
-    var searchVal = 'site: ' + document.getElementById('search_input').value;
-    document.getElementById('search_q').value = searchVal;
-    return true;
-  }
-</script>
+        
+      浸研咖啡
+      
+    </title>
+    <meta name="keywords" content="浸研咖啡" />
+    
+    
+    
+    <link href="atom.xml" rel="alternate" title="浸研咖啡" type="application/atom+xml">
+    <script src="https://cdn.bootcss.com/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="asset/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   </head>
-  <body class="antialiased hide-extras">
-    
-    <div class="marketing off-canvas-wrap" data-offcanvas>
-      <div class="inner-wrap">
-
-
-<nav class="top-bar docs-bar hide-for-small" data-topbar>
-
-
-  <section class="top-bar-section">
-  <div class="row">
-      <div style="position: relative;width:100%;"><div style="position: absolute; width:100%;">
-        <ul id="main-menu" class="left">
-        
-        <li id=""><a target="self" href="index.html">Home</a></li>
-        
-        <li id=""><a target="_self" href="archives.html">Archives</a></li>
-        
-        </ul>
-
-        <ul class="right" id="search-wrap">
-          <li>
-<form target="_blank" onsubmit="return before_search();" action="http://google.com/search" method="get">
-    <input type="hidden" id="search_q" name="q" value="" />
-    <input tabindex="1" type="search" id="search_input"  placeholder="Search"/>
-</form>
-</li>
-          </ul>
-      </div></div>
-  </div>
-  </section>
-
-</nav>
-
-        <nav class="tab-bar show-for-small">
-  <a href="javascript:void(0)" class="left-off-canvas-toggle menu-icon">
-    <span> &nbsp; </span>
-  </a>
-</nav>
-
-<aside class="left-off-canvas-menu">
-      <ul class="off-canvas-list">
-       
-       <li><a href="index.html">HOME</a></li>
-    <li><a href="archives.html">Archives</a></li>
-    <li><a href="about.html">ABOUT</a></li>
-
-    <li><label>Categories</label></li>
-
-         
-
-      </ul>
-    </aside>
-
-<a class="exit-off-canvas" href="#"></a>
-
-
-        <section id="main-content" role="main" class="scroll-container">
-        
-       
-
- <script type="text/javascript">
-	$(function(){
-		$('#menu_item_index').addClass('is_active');
-	});
-</script>
-<div class="row">
-	<div class="large-8 medium-8 columns">
-		<div class="markdown-body home-categories">
-		
-			<div class="article">
-                <a class="clearlink" href="16893567030890.html">
-                
-                  <h1>玩</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<p>测试</p>
-
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                  
-                    <span class="date">2023/7/15</span>
-                    
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
-
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
-			<div class="article">
-                <a class="clearlink" href="16893523152290.html">
-                
-                  <h1>test</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<p>更</p>
-
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                  
-                    <span class="date">2023/7/15</span>
-                    
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
-
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
+  <body>
+    <script src="asset/colorscheme.js"></script>
+    <div class="container">
+      <div class="head">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="blogname">浸研咖啡</div>
+            <nav>
               
-
-
-			<div class="row">
-			  <div class="large-6 columns">
-			  <p class="text-left" style="padding-top:25px;">
-			   
-			  </p>
-			  </div>
-			  <div class="large-6 columns">
-			<p class="text-right" style="padding-top:25px;">
-			
-			</p>
-			  </div>
-			</div>
-		</div>
-	</div><!-- large 8 -->
-
- <div class="large-4 medium-4 columns">
-  <div class="hide-for-small">
-    <div id="sidebar" class="sidebar">
-          <div id="site-info" class="site-info">
-            
-                <h1></h1>
-                <div class="site-des"></div>
-                <div class="social">
-
-
-
-
-
-
-
-
-
-
-
-  <a target="_blank" class="rss" href="atom.xml" title="RSS">RSS</a>
-                
-              	 </div>
-          	</div>
-
-             
-
-              <div id="site-categories" class="side-item ">
-                <div class="side-header">
-                  <h2>Categories</h2>
-                </div>
-                <div class="side-content">
-
-      	<p class="cat-list">
-         
-        </p>
-
-
-                </div>
-              </div>
-
-              <div id="site-categories" class="side-item">
-                <div class="side-header">
-                  <h2>Recent Posts</h2>
-                </div>
-                <div class="side-content">
-                <ul class="posts-list">
-	      
-		      
-			      <li class="post">
-			        <a href="16893567030890.html">玩</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="16893523152290.html">test</a>
-			      </li>
-		     
-		   
-		  		</ul>
-                </div>
-              </div>
-        </div><!-- sidebar -->
-      </div><!-- hide for small -->
-</div><!-- large 4 -->
-
-</div><!-- row -->
-
- <div class="page-bottom clearfix">
-  <div class="row">
-   <p class="copyright">Copyright &copy; 2015
-Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a>,&nbsp; 
-Theme used <a target="_blank" href="http://github.com">GitHub CSS</a>.</p>
-  </div>
-</div>
-
-        </section>
+                <div class="item"><a target="self" href="index.html">Home</a></div>
+              
+                <div class="item"><a target="_self" href="archives.html">Archives</a></div>
+              
+            </nav>
+          </div>
+        </div>
       </div>
-    </div>
-
+      <hr>
+    </div> <div class="container" id="category">
   
     
+      <div class="article huge">
+        <div class="featureimg" style="background-image: url('/Users/shd188/Downloads/6部.png')"></div>
+        <div class="row content">
+          <div class="col-md-2"></div>
+          <div class="col-md-10 main">
+            <div class="row">
+              <div class="col-md-10 post">
+                <div class="headline"><a href="6documentaryfilms.html">推荐六部咖啡纪录片</a></div>
+                <div class="subtitle">咖啡控看到根本停不下来</div>
+                <div class="meta"><span class="time">$[timeformat('2023-07-15T17:35:33+08:00')]</span></div>
+                <div class="body">
+                    <p>如果你喜欢咖啡，并想了解咖啡的前世今生，这6部纪录片必须要看。</p>
 
-    <script src="asset/js/foundation.min.js"></script>
-    <script>
-      $(document).foundation();
-      function fixSidebarHeight(){
-        var w1 = $('.markdown-body').height();
-          var w2 = $('#sidebar').height();
-          if (w1 > w2) { $('#sidebar').height(w1); };
-      }
-      $(function(){
-        fixSidebarHeight();
-      })
-      $(window).load(function(){
-          fixSidebarHeight();
-      });
-     
-    </script>
+<p>这几部纪录片有拍摄咖啡背后种植户的不易；有采访咖啡大咖如何通过自己的努力改善种植户的生活困境；有记录了雀巢工厂制作速溶咖啡的全流程；有跟拍了咖啡师参加比赛的心路历程；还有类似《舌尖上的中国》史诗级的纪录片；也有轻松愉快的咖啡旅游记录的综艺节目。</p>
 
+<h2 id="toc_0">1.《咖啡大师》The Coffee Man</h2>
+
+<p>它是一部看完充满热情与干劲的纪录片，讲诉了2015年WBC冠军sasa的故事，看看他是如何通过和咖啡农合作，以达到提高咖啡品质的目的，然后不断地自我进修，最终取得WBC的冠军。别忘了，看完来一杯咖啡。<br/>
+<img src="http://cdn.icoffee.site/2023-07-17-8ce751635f99478fbf0f2887ae19442e.jpg" alt="咖啡大师" style="width:750px;"/></p>
+
+<p><a href="https://www.bilibili.com/video/BV1PJ41167gj/?spm_id_from=333.337.search-card.all.click">点击观看&gt;&gt;</a></p>
+
+<h2 id="toc_1">2.《咖啡师》Barista</h2>
+
+<p><img src="http://cdn.icoffee.site/2023-07-17-16895918674490.jpg" alt="咖啡师" style="width:750px;"/><br/>
+影片追踪五名参与WBC赛事的咖啡师，记录了咖啡师在比赛前需要准备的工作，例如需要看心理学、哲学类的书籍，练习演讲技巧（如语气、语调、表情的等），力图在比赛时的阐述能进一步打动评委。有想参加WBC比赛的朋友，可以通过观看这部纪录片提前了解。</p>
+
+<p><a href="https://www.bilibili.com/video/BV1SE41187Ms/?spm_id_from=333.337.search-card.all.click">点击观看&gt;&gt;</a></p>
+
+<h2 id="toc_2">3.《走进工厂：咖啡》Inside the Factory</h2>
+
+<p><img src="http://cdn.icoffee.site/2023-07-17-16895916230779.jpg" alt="走进工厂：咖啡" style="width:750px;"/><br/>
+看完这个纪录片我才发现原来当下流行的咖啡冻干粉早已不是什么先进技术，雀巢咖啡的速溶用的就是冻干技术，更有意思的是他们为了保留咖啡香气，先将香气抽取出来，装瓶的时候再放进去，所以才有大家打开瓶子时咖啡香扑鼻而来的感受。</p>
+
+<p><a href="https://www.bilibili.com/video/BV18B4y1n7kF/?spm_id_from=333.337.search-card.all.click">点击观看&gt;&gt;</a></p>
+
+<h2 id="toc_3">4. 《一部关于咖啡的电影》A Film About Coffee</h2>
+
+<p><img src="http://cdn.icoffee.site/2023-07-17-16895910986014.jpg" alt="一部关于咖啡的电影" style="width:750px;"/><br/>
+影片采访了数位咖啡大咖，里面还能看到<strong>蓝瓶子</strong>的身影，他们通过自己的努力解决当地咖啡种植者的生活窘境，帮助他们更好地种植和处理，并向他们分享咖啡知识。影片里说：很多种植户都没有喝过自己种植的咖啡做成的Espresso。</p>
+
+<p><a href="https://www.bilibili.com/video/BV1QT4y177a4/?spm_id_from=333.337.search-card.all.click">点击观看&gt;&gt;</a></p>
+
+<h2 id="toc_4">5. 《黑咖啡》Black Coffee</h2>
+
+<p><img src="http://cdn.icoffee.site/2023-07-17-16895922481119.jpg" alt="黑咖啡" style="width:750px;"/><br/>
+这是一部关于咖啡史诗的文献纪录片，像是咖啡的史记。影片不仅再现了咖啡是如何从远古时间开始传播，从而成为社会、经济和政治生活中密不可分的一部分，也生动地记录着咖啡产地有趣的风土人情。</p>
+
+<p><a href="https://www.bilibili.com/video/BV1Xs411z7Me/">点击观看&gt;&gt;</a></p>
+
+<h2 id="toc_5">6.《黑金》Black Gold</h2>
+
+<p><img src="http://cdn.icoffee.site/2023-07-17-16895911354674.jpg" alt="blackgold" style="width:750px;"/><br/>
+以埃塞俄比亚Oromia咖啡合作社联盟的领导者为主线，揭示了如何从艰难生存的埃塞俄比亚种植者手中到我们手中咖啡的交易过程。影片真实深刻，令人反思。</p>
+
+<p><a href="https://www.bilibili.com/video/BV1js411t7YM/?spm_id_from=333.337.search-card.all.click">点击观看&gt;&gt;</a></p>
+
+                </div>
+                <div class="bottom">
+                  <a href="6documentaryfilms.html" class="continue float-right">
+                    继续阅读
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="otherposts row">
     
-
-
-
-  </body>
+   
+  </div>
+  <div class="pagenavi">
+    <div class="item">已是最新一页</div>
+    <div class="item"> · </div>
+    <div class="item">已是最旧一页</div>
+  </div>
+ </div>
+ <script>
+   let category = new Vue({
+    el: '#category',
+    data: {},
+    methods: {
+      indexOddandEven(index) {
+        return index%2 ? 'odd' : 'even';
+      },
+      timeformat(raw) {
+        return moment(raw).format("YYYY 年 MM 月 DD 日");
+      }
+    },
+    delimiters: ['$[', ']']
+  })
+ </script>
+      <div class="container">
+      <hr>
+      <div class="footer" id="footer">
+        <div class="slogan">可以没有完美的咖啡，但不能没有尝试的热情。</div>
+      </div>
+      <script>
+        let footer = new Vue({
+          el: '#footer',
+          data: {
+            message: 'hello'
+          },
+          delimiters: ['$[', ']']
+        })
+      </script>
+    </div>
+  </div>
+</body>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<style></style>
+<script>
+  changeColorScheme()
+</script>
 </html>
